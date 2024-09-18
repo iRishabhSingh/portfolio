@@ -13,6 +13,7 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
+        poppins: ["Poppins", "system-ui"], // Poppins
         workSans: ["Work Sans", "sans-serif"], // WorkSans
       },
     },

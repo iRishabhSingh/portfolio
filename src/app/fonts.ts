@@ -1,5 +1,56 @@
 import localFont from "next/font/local";
 
+const poppins = localFont({
+  src: [
+    { path: "./fonts/Poppins-Black.woff2", weight: "900", style: "normal" },
+    { path: "./fonts/Poppins-Black.woff", weight: "900", style: "normal" },
+    { path: "./fonts/Poppins-BlackItalic.woff2", weight: "900", style: "italic" },
+    { path: "./fonts/Poppins-BlackItalic.woff", weight: "900", style: "italic" },
+    
+    { path: "./fonts/Poppins-Bold.woff2", weight: "700", style: "normal" },
+    { path: "./fonts/Poppins-Bold.woff", weight: "700", style: "normal" },
+    { path: "./fonts/Poppins-BoldItalic.woff2", weight: "700", style: "italic" },
+    { path: "./fonts/Poppins-BoldItalic.woff", weight: "700", style: "italic" },
+    
+    { path: "./fonts/Poppins-ExtraBold.woff2", weight: "800", style: "normal" },
+    { path: "./fonts/Poppins-ExtraBold.woff", weight: "800", style: "normal" },
+    { path: "./fonts/Poppins-ExtraBoldItalic.woff2", weight: "800", style: "italic" },
+    { path: "./fonts/Poppins-ExtraBoldItalic.woff", weight: "800", style: "italic" },
+
+    { path: "./fonts/Poppins-ExtraLight.woff2", weight: "200", style: "normal" },
+    { path: "./fonts/Poppins-ExtraLight.woff", weight: "200", style: "normal" },
+    { path: "./fonts/Poppins-ExtraLightItalic.woff2", weight: "200", style: "italic" },
+    { path: "./fonts/Poppins-ExtraLightItalic.woff", weight: "200", style: "italic" },
+
+    { path: "./fonts/Poppins-Italic.woff2", weight: "400", style: "italic" },
+    { path: "./fonts/Poppins-Italic.woff", weight: "400", style: "italic" },
+
+    { path: "./fonts/Poppins-Light.woff2", weight: "300", style: "normal" },
+    { path: "./fonts/Poppins-Light.woff", weight: "300", style: "normal" },
+    { path: "./fonts/Poppins-LightItalic.woff2", weight: "300", style: "italic" },
+    { path: "./fonts/Poppins-LightItalic.woff", weight: "300", style: "italic" },
+
+    { path: "./fonts/Poppins-Medium.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/Poppins-Medium.woff", weight: "500", style: "normal" },
+    { path: "./fonts/Poppins-MediumItalic.woff2", weight: "500", style: "italic" },
+    { path: "./fonts/Poppins-MediumItalic.woff", weight: "500", style: "italic" },
+
+    { path: "./fonts/Poppins-Regular.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/Poppins-Regular.woff", weight: "400", style: "normal" },
+
+    { path: "./fonts/Poppins-SemiBold.woff2", weight: "600", style: "normal" },
+    { path: "./fonts/Poppins-SemiBold.woff", weight: "600", style: "normal" },
+    { path: "./fonts/Poppins-SemiBoldItalic.woff2", weight: "600", style: "italic" },
+    { path: "./fonts/Poppins-SemiBoldItalic.woff", weight: "600", style: "italic" },
+
+    { path: "./fonts/Poppins-Thin.woff2", weight: "100", style: "normal" },
+    { path: "./fonts/Poppins-Thin.woff", weight: "100", style: "normal" },
+    { path: "./fonts/Poppins-ThinItalic.woff2", weight: "100", style: "italic" },
+    { path: "./fonts/Poppins-ThinItalic.woff", weight: "100", style: "italic" }
+  ],
+  variable: "--font-poppins",
+});
+
 const workSans = localFont({
   src: [
     { path: "./fonts/WorkSans-Black.woff2", weight: "900", style: "normal" },
@@ -50,4 +101,4 @@ const workSans = localFont({
   variable: "--font-work-sans",
 });
 
-export { workSans };
+export { poppins, workSans };

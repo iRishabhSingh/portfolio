@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import "./fonts.css";
 import "./globals.css";
-import { workSans } from "./fonts";
+import { poppins, workSans } from "./fonts";
 
 export const metadata: Metadata = {
   title: "ऋ's Portfolio",
@@ -17,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${workSans.variable} antialiased`}>{children}</body>
+      <body className={`${(poppins.variable, workSans.variable)} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
